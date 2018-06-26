@@ -6,6 +6,7 @@ public class Conta {
     private double saldo;
     private double limite;
     private String titular;
+    private JFrame frame = new JFrame("dialogo");
     
     //construtor padrão
     public Conta(String titular){
@@ -37,7 +38,7 @@ public class Conta {
     }
     //metodo de saque de valores
     void saca(double valor){
-        JFrame frame = new JFrame("dialogo");
+        
         if (valor<this.saldo){
             this.saldo-=valor;
         }
@@ -54,5 +55,9 @@ public class Conta {
     //retorna o limite da conta
     double getLimite(){
         return this.limite;
+    }
+    
+    void setLimite(double limite){
+        this.limite=limite;
     }
 }
