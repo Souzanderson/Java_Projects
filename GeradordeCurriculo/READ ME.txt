@@ -1,0 +1,6 @@
+APP: GeradordeCurriculos
+
+Funcionalidade:
+>>> App direcionado a construção e formatação de currículos, ao receber os dados em uma
+form construída com auxílio da biblioteca swing e do netbeans, transcreve os mesmos para um
+documento html formatado;
